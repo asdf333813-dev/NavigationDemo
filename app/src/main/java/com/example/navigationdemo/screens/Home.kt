@@ -1,5 +1,6 @@
 package com.example.navigationdemo.screens
 
+import com.example.navigationdemo.WelcomeScreen
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.Button
 import androidx.compose.material3.OutlinedTextField
@@ -39,6 +40,7 @@ fun Home(onNavigation: (NavKey) -> Unit) {
 
             Button(
                 onClick = {
+                    onNavigation(WelcomeScreen(userName))
                 }
             ) {
                 Text(text = "Register")

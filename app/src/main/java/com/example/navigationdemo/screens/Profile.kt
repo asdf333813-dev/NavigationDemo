@@ -30,6 +30,7 @@ fun Profile(
 
             Button(
                 onClick = {
+                    onClearBackStack()
                 }
             ) {
                 Text(text = "Go Home")

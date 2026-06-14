@@ -1,5 +1,6 @@
 package com.example.navigationdemo.screens
 
+import com.example.navigationdemo.ProfileScreen
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
@@ -32,6 +33,7 @@ fun Welcome(
 
             Button(
                 onClick = {
+                    onNavigation(ProfileScreen)
                 }
             ) {
                 Text(text = "Set up your Profile")
